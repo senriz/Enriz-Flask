@@ -31,25 +31,25 @@
         <input class="bg-primary" type="number" name="velocidad"><br>
         </div> 
     <div class="m-2 fw-bolder  d-flex justify-content-center">  
-        Distancia del Caballo
+        Distancia del Caballo (m)
         </div>
     <div class="mb-3 d-flex justify-content-center">
         <input class="bg-primary" type="number" name="distancia"><br>
         </div>
     <div class="m-2 fw-bolder d-flex justify-content-center">
-        Desaceleracion del auto (En negativo)
+        Desaceleración del auto (negativo, m/s)
     </div>
     <div class="mb-3 d-flex justify-content-center">
         <input class="bg-primary" type="number" name="frenado"><br>  
         </div>
     <div class="mt-4 d-flex justify-content-center">
-    <button type="submit" class="d-flex justify-content-center btn btn-primary value="submit">Calcular</button>
+    <button type="submit" class="d-flex justify-content-center btn btn-primary" value="submit">Calcular</button>
         </div>
     </form>
     
     {%if acel%}
     <div class="mt-1">
-    <p class="m-0 fs-5 d-flex justify-content-center">Te tragaste a un caballo de frente pobre de el :( Necesitabas frenar a {{acel}} para no chocarte.</p>
+    <p class="m-0 fs-5 d-flex justify-content-center">Te comiste al caballo :( Necesitabas frenar a {{acel}} para no chocarte.</p>
     <p class="fs-5 d-flex justify-content-center">Lo chocaste en {{tie}} segundos</p>
     </div>
     {%endif%}
